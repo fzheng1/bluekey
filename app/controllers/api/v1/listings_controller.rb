@@ -47,7 +47,7 @@ class Api::V1::ListingsController < ApplicationController
     if listing.save
       render json: listing, status: 201
     else
-      render json: { error: "listing could not be created" }. status: 400
+      render json: { error: "listing could not be created" }, status: 400
     end
   end
 

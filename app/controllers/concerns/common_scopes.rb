@@ -42,8 +42,8 @@ module CommonScopes
             scope "#{prefix}_on_or_before",    lambda { |time| where("#{attribute} <= ?", time) if time.present? }
             scope "#{prefix}_on_or_after",     lambda { |time| where("#{attribute} >= ?", time) if time.present? }
             scope "#{prefix}_between",         lambda { |s_time, e_time| where("#{attribute} BETWEEN ? AND ?", s_time, e_time) if s_time.present? && e_time.present? }
-            scope "order_by_#{prefix}_recent", lambda { order(where(Arel.sql("#{attribute} DESC")) }
-            scope "order_by_#{prefix}_time",   lambda { order(where(Arel.sql("#{attribute} ASC")) }
+            scope "order_by_#{prefix}_recent", lambda { order(Arel.sql("#{attribute} DESC")) }
+            scope "order_by_#{prefix}_time",   lambda { order(Arel.sql("#{attribute} ASC")) }
             alias_scope "order_by_#{prefix}_date", "order_by_#{prefix}_time"
         end
         alias_method :date_scopes, :time_scopes

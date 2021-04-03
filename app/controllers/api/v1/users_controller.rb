@@ -31,7 +31,7 @@ class Api::V1::UsersController < ApplicationController
     if user.update_attributes(params.slice(*USER_PARAMS))
       render json: user, status: 200
     else
-      render json: {error: "user could not be updated"}, , status: 400
+      render json: {error: "user could not be updated"}, status: 400
     end
   end
 end
