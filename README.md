@@ -14,6 +14,11 @@ step 1: download and startup postgres somwhere
 Update 'config/database.yml' to point to your own postgres instance since we don't have one set up for everyone :')
 guess everyone knows my ip now, default postgres port is 5432 so don't worry about that
 
+for the DB password make a rails environment variable file with 'touch config/local_env.yml' and add it there
+eg:
+in config/local_env.yml
+LOCAL_DATABASE_PASSWORD: 'your pw'
+
 if on windows and using rails through wsl, host should be THE IP ADDRESS OF WHICHEVER SIDE YOU SET UP THE POSTGRES SERVER ON 
 eg wsl postgres server -> wsl ip address (localhost might work)
 eg windows postgres server -> windows ip address (localhost won't work)
