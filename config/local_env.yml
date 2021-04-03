@@ -1,2 +1,2 @@
 # add all local env variables here
-LOCAL_DATABASE_PASSWORD: 'add_db_pw_here'
+LOCAL_DATABASE_PASSWORD: 'test'
