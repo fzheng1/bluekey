@@ -17,7 +17,7 @@ guess everyone knows my ip now, default postgres port is 5432 so don't worry abo
 for the DB password make a rails environment variable file with 'touch config/local_env.yml' and add it there
 eg:
 in config/local_env.yml
-LOCAL_DATABASE_PASSWORD: 'your pw'
+LOCAL_DATABASE_PASSWORD: 'your pw' ## !!NO SYMBOLS IN PW!! MAY CAUSE ERRORS
 
 if on windows and using rails through wsl, host should be THE IP ADDRESS OF WHICHEVER SIDE YOU SET UP THE POSTGRES SERVER ON 
 eg wsl postgres server -> wsl ip address (localhost might work)
