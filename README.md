@@ -3,6 +3,11 @@ help
 
 If you actually manage to get this up and running please update the doc lmao
 
+SETUP RAILS:
+I did it on windown lmfao GL should be ezpz on unix system
+
+https://gorails.com/setup/windows/10
+
 GEMS
 
 tbh I don't know how to setup gem dependencies up I think it's just 'bundle install' from the project directory
